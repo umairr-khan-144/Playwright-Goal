@@ -1,31 +1,28 @@
-# Dependencies
+# Node
 node_modules/
+dist/
 
-# Playwright artifacts
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
-/playwright/.auth/
-
-# Screenshots and videos
-screenshots/
-videos/
-
-# IDE
-.vscode/
-.idea/
-*.code-workspace
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-npm-debug.log*
-
-# Environment variables (NEVER commit secrets)
+# Environment / secrets - never commit real credentials
 .env
 .env.local
 .env.*.local
+
+# Playwright / test artifacts
+test-results/
+playwright-report/
+playwright/.cache/
+blob-report/
+
+# Allure
+allure-results/
+allure-report/
+
+# Logs
+*.log
+logs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
